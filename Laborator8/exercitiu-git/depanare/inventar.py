@@ -16,7 +16,7 @@ def port_valid(text):
     try:
         return int(text)
     except ValueError:
-    return None
+        return None
 
 
 def pe_servicii(tinte):
