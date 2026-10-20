@@ -14,6 +14,7 @@ def incarca(cale):
 def port_valid(text):
     """Intoarce portul ca int, sau None daca nu e un numar."""
     try:
+        print(text)
         return int(text)
     except ValueError:
         return None
@@ -22,26 +23,32 @@ def port_valid(text):
 def pe_servicii(tinte):
     """Dict: serviciu -> lista de porturi."""
     grupe = {}
+    print(tinte, "Toate tintele")
     for t in tinte:
-        #print(t)
+        print(t, "Tinta`")
         serviciu = t.get("serviciu", "necunoscut")
         port = port_valid(t["port"])
         if port is None:
             print("sar peste", t["gazda"], ": port invalid", t["port"])
             continue
         grupe[serviciu] = []
-        grupe[serviciu].append(port) 
-        return grupe
+        grupe[serviciu].append(port)
+        print(grupe)
+    
+    return grupe
 
 def peste_prag(tinte, prag):
     """Lista gazdelor cu un port mai mare decat pragul."""
-    rezultat = []
+    mari = []
     for t in tinte:
-        port = int(t["port"])
-        if port > prag:
-            rezultat.append(t["gazda"])
-        return rezultat
+        try:
+            port = int(t["port"])
+        except (ValueError, KeyError, TypeError):
+            continue
 
+        if port > int(prag):
+            mari.append(t["gazda"])
+    return mari
 
 def main():
     p = argparse.ArgumentParser()
@@ -58,6 +65,7 @@ def main():
 
     mari = peste_prag(tinte, a.prag)
     print(f"Peste {a.prag}: {mari}")
+    print(grupe, mari, "Amogus")
 
     with open("raport_inventar.json", "w") as f:
         json.dump({"servicii": grupe, "peste_prag": mari}, f, indent=2)
