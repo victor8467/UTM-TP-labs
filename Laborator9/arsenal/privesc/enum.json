@@ -1,0 +1,100 @@
+{
+  "suid": [
+    {
+      "cale": "/bin/cp",
+      "nume": "cp",
+      "risk": "Mare"
+    },
+    {
+      "cale": "/bin/mount",
+      "nume": "mount",
+      "risk": "Normal"
+    },
+    {
+      "cale": "/bin/su",
+      "nume": "su",
+      "risk": "Normal"
+    },
+    {
+      "cale": "/bin/umount",
+      "nume": "umount",
+      "risk": "Normal"
+    },
+    {
+      "cale": "/usr/bin/chfn",
+      "nume": "chfn",
+      "risk": "Normal"
+    },
+    {
+      "cale": "/usr/bin/chsh",
+      "nume": "chsh",
+      "risk": "Normal"
+    },
+    {
+      "cale": "/usr/bin/find",
+      "nume": "find",
+      "risk": "Mare"
+    },
+    {
+      "cale": "/usr/bin/gpasswd",
+      "nume": "gpasswd",
+      "risk": "Normal"
+    },
+    {
+      "cale": "/usr/bin/newgrp",
+      "nume": "newgrp",
+      "risk": "Normal"
+    },
+    {
+      "cale": "/usr/bin/nmap",
+      "nume": "nmap",
+      "risk": "Mare"
+    },
+    {
+      "cale": "/usr/bin/passwd",
+      "nume": "passwd",
+      "risk": "Normal"
+    },
+    {
+      "cale": "/usr/bin/sudo",
+      "nume": "sudo",
+      "risk": "Normal"
+    },
+    {
+      "cale": "/usr/bin/vim.basic",
+      "nume": "vim.basic",
+      "risk": "Mare"
+    }
+  ],
+  "sudo": [
+    {
+      "user": "ana",
+      "drept": "(ALL) NOPASSWD: /usr/bin/vim.basic",
+      "risc": "mare"
+    },
+    {
+      "user": "ana",
+      "drept": "(ALL) /usr/bin/apt",
+      "risc": "normal"
+    },
+    {
+      "user": "www-data",
+      "drept": "(root) NOPASSWD: /usr/bin/find",
+      "risc": "mare"
+    }
+  ],
+  "cron": [
+    {
+      "user": "root",
+      "comanda": "cd / && run-parts --report /etc/cron.hourly"
+    },
+    {
+      "user": "root",
+      "comanda": "/opt/backup/run.sh"
+    },
+    {
+      "user": "www-data",
+      "comanda": "/home/www-data/clean.sh"
+    }
+  ]
+}
