@@ -1,0 +1,19 @@
+Jan 10 03:11:58 srv sshd[2010]: Failed password for root from 203.0.113.9 port 51230 ssh2
+Jan 10 03:12:01 srv sshd[2011]: Failed password for root from 203.0.113.9 port 51234 ssh2
+Jan 10 03:12:03 srv sshd[2012]: Failed password for invalid user admin from 203.0.113.9 port 51240 ssh2
+Jan 10 03:12:05 srv sshd[2013]: Failed password for root from 203.0.113.9 port 51250 ssh2
+Jan 10 03:12:07 srv sshd[2014]: Failed password for invalid user test from 203.0.113.9 port 51260 ssh2
+Jan 10 03:12:09 srv sshd[2015]: Failed password for root from 203.0.113.9 port 51270 ssh2
+Jan 10 03:12:11 srv sshd[2016]: Failed password for invalid user oracle from 203.0.113.9 port 51280 ssh2
+Jan 10 03:12:13 srv sshd[2017]: Failed password for root from 203.0.113.9 port 51290 ssh2
+Jan 10 03:12:15 srv sshd[2018]: Failed password for invalid user git from 203.0.113.9 port 51300 ssh2
+Jan 10 03:12:17 srv sshd[2019]: Failed password for root from 203.0.113.9 port 51310 ssh2
+Jan 10 03:12:19 srv sshd[2020]: Failed password for root from 203.0.113.9 port 51320 ssh2
+Jan 10 03:14:01 srv sshd[2051]: Failed password for ana from 198.51.100.7 port 40001 ssh2
+Jan 10 03:14:20 srv sshd[2052]: Failed password for ana from 198.51.100.7 port 40010 ssh2
+Jan 10 03:15:10 srv sshd[2090]: Accepted password for ana from 192.168.56.10 port 44512 ssh2
+Jan 10 03:16:44 srv sshd[2101]: Failed password for invalid user admin from 203.0.113.9 port 51330 ssh2
+Jan 10 03:17:02 srv CRON[2110]: pam_unix(cron:session): session opened for user root
+Jan 10 03:18:30 srv sshd[2120]: Accepted publickey for deploy from 10.0.0.5 port 50022 ssh2
+<linie stricata fara structura>
+Jan 10 03:19:00 srv sshd[2130]: Failed password for root from 203.0.113.9 port 51340 ssh2
