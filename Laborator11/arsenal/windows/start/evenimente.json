@@ -1,0 +1,10 @@
+[
+  {"id": 4624, "nivel": "info", "sursa": "Security", "cont": "ana", "mesaj": "An account was successfully logged on"},
+  {"id": 4625, "nivel": "warning", "sursa": "Security", "cont": "administrator", "mesaj": "An account failed to log on"},
+  {"id": 4625, "nivel": "warning", "sursa": "Security", "cont": "administrator", "mesaj": "An account failed to log on"},
+  {"id": 4625, "nivel": "warning", "sursa": "Security", "cont": "administrator", "mesaj": "An account failed to log on"},
+  {"id": 4672, "nivel": "info", "sursa": "Security", "cont": "ana", "mesaj": "Special privileges assigned to new logon"},
+  {"id": 4688, "nivel": "info", "sursa": "Security", "cont": "ana", "mesaj": "A new process has been created: update.exe"},
+  {"id": 7045, "nivel": "warning", "sursa": "System", "cont": "SYSTEM", "mesaj": "A service was installed: WinUpdateSvc"},
+  {"id": 1102, "nivel": "critical", "sursa": "Security", "cont": "administrator", "mesaj": "The audit log was cleared"}
+]
